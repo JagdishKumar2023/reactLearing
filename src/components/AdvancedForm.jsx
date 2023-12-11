@@ -10,15 +10,16 @@ const AdvancedForm = () => {
   });
 
   const handleChange = (e) => {
-    let { value, name, checked, type } = e.target;
+    let { value, name, checked, type } = e.target; // doubt
 
     if (type === "checkbox") {
+      // doubt
       setValues((prev) => {
-        return { ...prev, [name]: checked };
+        return { ...prev, [name]: checked }; // doubt
       });
     } else {
       setValues((prev) => {
-        return { ...prev, [name]: value };
+        return { ...prev, [name]: value }; // doubt
       });
     }
   };
