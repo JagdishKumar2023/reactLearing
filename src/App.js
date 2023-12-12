@@ -6,6 +6,7 @@ import Form from "./components/Form";
 import Checkbox from "./components/Checkbox";
 import AdvancedForm from "./components/AdvancedForm";
 import { useState } from "react";
+import PracticeForm from "./components/PracticeForm";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <InputValue />
       <Form /> */}
       {/* <Checkbox /> */}
-      <AdvancedForm />
+      {/* <AdvancedForm /> */}
+      <PracticeForm />
     </div>
   );
 }

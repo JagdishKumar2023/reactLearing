@@ -23,7 +23,7 @@ const AdvancedForm = () => {
     }
   };
 
-  console.log(values);
+  console.log(setValues);
 };
 
 export default AdvancedForm;
