@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
+// second step
+
 const PracticeForm = () => {
   const [values, setValues] = useState({
     name: "",
     email: "",
     password: "",
+    gender: "",
     isIndian: false,
   });
 
@@ -21,6 +24,8 @@ const PracticeForm = () => {
     }
   };
 
+  //   third step
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setUserData((prev) => [...prev, values]);
@@ -28,11 +33,14 @@ const PracticeForm = () => {
       name: "",
       email: "",
       password: "",
+      gender: "",
       isIndian: false,
     });
   };
 
   console.log(userData);
+
+  // first step
 
   return (
     <div>
@@ -59,7 +67,15 @@ const PracticeForm = () => {
             onChange={handleChange}
             placeholder="enter password"
           />
+          <input
+            type="gender"
+            placeholder="enter your gender"
+            onChange={handleChange}
+            name="gender"
+            value={values.gender}
+          />
 
+          <label htmlFor="">Are you an Indian?</label>
           <input
             type="checkbox"
             checked={values.isIndian}
