@@ -18,9 +18,9 @@ const PracticeForm = () => {
     // console.log(name, value);
 
     if (type === "checkbox") {
-      setValues((prev) => ({ ...prev, id: Date.now(), [name]: checked }));
-    } else {
       setValues((prev) => ({ ...prev, id: Date.now(), [name]: value }));
+    } else {
+      setValues((prev) => ({ ...prev, id: Date.now(), [name]: checked }));
     }
   };
 
@@ -28,7 +28,7 @@ const PracticeForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setUserData((prev) => [...prev, values]);
+    setUserData((prev) => [...prev, values]); // doubt
     setValues({
       name: "",
       email: "",
@@ -50,37 +50,37 @@ const PracticeForm = () => {
             type="text"
             value={values.name}
             name="name"
-            onChange={handleChange}
             placeholder="enter name"
+            onChange={handleChange}
           />
           <input
             type="email"
+            placeholder="enter email"
             value={values.email}
             name="email"
             onChange={handleChange}
-            placeholder="enter email"
           />
           <input
             type="password"
-            name="password"
-            value={values.password}
-            onChange={handleChange}
             placeholder="enter password"
+            value={values.password}
+            name="password"
+            onChange={handleChange}
           />
           <input
             type="gender"
             placeholder="enter your gender"
-            onChange={handleChange}
-            name="gender"
             value={values.gender}
+            name="gender"
+            onChange={handleChange}
           />
 
           <label htmlFor="">Are you an Indian?</label>
           <input
             type="checkbox"
             checked={values.isIndian}
-            onChange={handleChange}
             name="isIndian"
+            onChange={handleChange}
           />
 
           <button>Submit</button>

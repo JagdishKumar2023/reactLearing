@@ -1,12 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Counter } from "./components/Counter";
-import InputValue from "./components/InputValue";
-import Form from "./components/Form";
-import Checkbox from "./components/Checkbox";
-import AdvancedForm from "./components/AdvancedForm";
-import { useState } from "react";
-import PracticeForm from "./components/PracticeForm";
+// import { Counter } from "./components/Counter";
+// import InputValue from "./components/InputValue";
+// import Form from "./components/Form";
+// import Checkbox from "./components/Checkbox";
+// import AdvancedForm from "./components/AdvancedForm";
+// import { useState } from "react";
+// import Practices from "./components/Pratices";
+import Practic2 from "./components/Practic2";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Form /> */}
       {/* <Checkbox /> */}
       {/* <AdvancedForm /> */}
-      <PracticeForm />
+      {/* <PracticeForm /> */}
+      {/* <Practic2 /> */}
     </div>
   );
 }
