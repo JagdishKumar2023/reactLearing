@@ -8,10 +8,10 @@ const Practic2 = () => {
     tel: "",
   });
 
-  let { type, name, email } = useState([]);
+  let { name, value } = useState([]);
 
   const handleChange = (e) => {
-    let { values, email, type } = e.target;
+    let { value, email } = e.target;
     setValues((prev) => ({ ...prev, id: Date.now(), [name]: setValues }));
   };
 
